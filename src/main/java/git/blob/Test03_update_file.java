@@ -46,20 +46,20 @@ public class Test03_update_file {
 		//						.add("message", "update test message")
 		//						.add("sha", sha_of_textfile5)
 		//						.add("content", "bXkgdXBkYXRlZCBmaWxlIGNvbnRlbnRz").build());
-		final Blobs blobs = repo.git().blobs();
-		final Blob blob = blobs.create("content1", "encoding1");
+		Blobs blobs = repo.git().blobs();
+		Blob blob = blobs.create("content1", "encoding1");
 
 		MatcherAssert.assertThat(
 				blobs.get(blob.sha()),
 				Matchers.equalTo(blob)
 				);
-
-//
-//		final Blob created =  blobs.create("content", "base64");
-//		MatcherAssert.assertThat(
-//				blobs.get(created.sha()),
-//				Matchers.notNullValue()
-//				);
+		System.out.println("3");
+		//
+		//		final Blob created =  blobs.create("content", "base64");
+		//		MatcherAssert.assertThat(
+		//				blobs.get(created.sha()),
+		//				Matchers.notNullValue()
+		//				);
 	}
 
 
