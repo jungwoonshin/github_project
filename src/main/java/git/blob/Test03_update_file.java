@@ -11,6 +11,7 @@ import org.hamcrest.Matchers;
 import com.jcabi.github.Blob;
 import com.jcabi.github.Blobs;
 import com.jcabi.github.Coordinates;
+import com.jcabi.github.Gist;
 import com.jcabi.github.Github;
 import com.jcabi.github.Repo;
 import com.jcabi.github.RtGithub;
@@ -19,7 +20,7 @@ public class Test03_update_file {
 
 
 	public static void main(String[] args) throws IOException {
-		Github github = new RtGithub("jungwoonshin","wjddns1025");
+		Github github = new RtGithub("jungwoonshin","*******");
 		Repo repo = github.repos().get(
 				new Coordinates.Simple("jungwoonshin","bit2014")
 				);
@@ -53,7 +54,7 @@ public class Test03_update_file {
 				blobs.get(blob.sha()),
 				Matchers.equalTo(blob)
 				);
-		System.out.println("3");
+		
 		//
 		//		final Blob created =  blobs.create("content", "base64");
 		//		MatcherAssert.assertThat(

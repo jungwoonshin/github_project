@@ -8,7 +8,7 @@
 //public class Test01_create_repository{
 //	//	static Logger logger;
 //	static String user = "jungwoonshin";
-//	static String password = "wjddns1025";
+//	static String password = "****";
 //
 //
 //	public static void main(String[] args) throws Exception {

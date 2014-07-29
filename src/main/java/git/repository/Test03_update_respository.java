@@ -16,7 +16,7 @@
 //
 //	
 //	public static void main(String[] args) throws IOException {
-//		Github github = new RtGithub("jungwoonshin","wjddns1025");
+//		Github github = new RtGithub("jungwoonshin","******");
 //		Repo repo = github.repos().get(
 //				new Coordinates.Simple("jungwoonshin","bit2014")
 //				);

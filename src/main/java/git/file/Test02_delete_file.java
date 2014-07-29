@@ -17,7 +17,7 @@ public class Test02_delete_file{
 
 
 	public static void main(String[] args) throws Exception {
-		Github github = new RtGithub("jungwoonshin","wjddns1025");
+		Github github = new RtGithub("jungwoonshin","******");
 		Repo repo = github.repos().get(
 				new Coordinates.Simple("jungwoonshin","bit2014")
 				);
